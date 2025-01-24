@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="icon" href="./favicon-32x32.png">
+    <style>
+   
+      span{
+        font-size: larger;
+        font-weight: 400;
+        color:darkblue;
+      }
+      
+      label{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        font-weight: 500;
+        font-style: initial;
+        font-display:inherit;
+        
+      }
+      body{
+        font-family:Arial, Helvetica, sans-serif;
+        height: fit-content;
+        width: fit-content;
+      }
+      
+      main{
+        background-color: hsl(184, 52%, 88%); ;
+        height: fit-content;
+        width: 100vw;
+        margin: 0 !important;
+        padding: 1px;
+        box-sizing: border-box;
+      }
+      p{
+  color: hsl(211, 70%, 39%);
+  font-size: 22px;
+}
+
+
+      </style>
+      
+</head>
+<body>
+    <main>
+    <DIV>
+        <DIV>
+            <IMG SRC="./icon-success-check.svg" ALT="SUCCESS">
+                <SPAN>Message Sent!</SPAN>
+        </DIV>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </DIV>
+    <section>
+        <H1>Contact Us</H1>
+        <FORM>
+            <DIV>
+                <DIV>
+                    <LABEL FOR="FIRST NAME">First Name</LABEL>
+                    <input type="text" aria-required="true"
+                    aria-describedby="first-name-error" id="first-name-input">
+    >
+                    <span role="alert"
+                    aria-live="polite">This field is required</span>
+                    
+                </DIV>
+                <div>
+                    <LABEL FOR="lasT NAME">Last Name</LABEL>
+                    <input type="text" aria-required="true"
+                    aria-describedby="last-name-error" id="last-name-input" >
+    ><span  role="alert"
+    aria-live="polite">This field is required</span>
+                </div>
+            </DIV>
+            <div>
+                <label for="email-input">Email Address</label>
+                <input type="text" name="query"
+                id="email-input"
+                aria-required="true"
+                aria-describedby="email-error">
+                <span id="email-error" class="error" aria-live="polite"></span>
+
+            </div>
+            <fieldset>
+                <legend>Query type</legend>
+                <label for="general-enquiry"><input type="radio" id="general-enquiry" name="query"
+                    aria-required="true"
+                    aria-describedby="query-type-error"> General Enquiry</label>
+                    <label for="support-request">
+            <input type="radio"
+                      id="support-request"
+                      name="query"
+                      aria-required="true"
+                      aria-describedby="query-type-error"/>
+                      Support Request</label
+                  >
+                  <span
+                  id="query-type-error"  
+                  role="alert"
+                  aria-live="polite"
+                  >Please select a query type
+                </span >
+            </fieldset>
+            <div>
+                <label for="message-input">Message </label>
+                <textarea
+                type="text"
+                id="message-input"
+                name="query"
+                aria-required="true"
+                aria-describedby="message-error"
+              ></textarea>
+              <span
+              id="message-error"
+              class="error"
+              role="alert"
+              aria-live="polite"
+              >This field is required</span>
+            </div>
+            <div>
+                <input
+                type="checkbox"
+                id="checkbox"
+                class="checkbox"
+                aria-describedby="checkbox-error" />
+              <label for="checkbox">I consent to being contacted by the team</label
+              >
+              <span
+              aria-live="polite"
+              >To submit this form, please consent to being contacted</span
+            >
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </FORM>
+    </section>
+    </main>
+</body>
+</html>
