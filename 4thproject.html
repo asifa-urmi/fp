@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive page</title>
+    <style>
+        p {
+  font-size: 14px;
+  font-family: 'Montserrat';
+}
+body {
+  font-family: 'Fraunces', arial;
+  background-color:rgb(254, 212, 254);
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+main {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color:white;
+}
+#ℹ️ {
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.😎 {
+  padding: 25px;
+}
+.para1 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+  color: var(--Dark-grayish-blue);
+}
+h1 {
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.para2 {
+  color: var(--Dark-grayish-blue);
+  line-height: 1.7;
+  width: 260px;
+  margin-bottom: 30px;
+}
+.flex💪 {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 20px;
+}
+.para3 {
+  flex: 1;
+  color: var(--Dark-cyan);
+  font-size: 40px;
+  font-weight: 700;
+}
+.para4 {
+  flex: 1;
+  text-decoration: line-through;
+  color: var(--Dark-grayish-blue);
+}
+button {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  border-radius: 12px;
+  gap: 10px;
+  width: 100%;
+  height: 3.5rem;
+  background-color:darkcyan;
+}
+button p {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <img src="./image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum" id="ℹ️">
+    
+        <div class="😎">
+    
+          <p class="para1">Perfume</p>
+    
+          <h1>Gabrielle Essence Eau De Parfum</h1>
+    
+          <p class="para2">A floral, solar and voluptuous interpretation  composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+    
+          <div class="flex💪">
+            <p class="para3">$149.99</p>
+            <p class="para4">$169.99</p>
+          </div>
+    
+          <button class="button">
+            <img src="./icon-cart.svg" alt="Add to Cart" width="20px">
+            <p class="para">Add to Cart</p>
+          </button>
+        </div>
+    
+      </main>
+</body>
+</html>
